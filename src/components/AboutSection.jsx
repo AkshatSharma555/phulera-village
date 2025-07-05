@@ -6,9 +6,9 @@ import sachivImg from '../assets/sachiv.jpg';
 function AboutSection() {
   return (
     <div className="about-section">
-      {/* LEFT SIDE */}
-      <div className="about-left">
 
+      {/* LEFT COLUMN: About + Glance */}
+      <div className="about-left">
         <div className="about-village">
           <h2>ABOUT VILLAGE</h2>
           <p>
@@ -20,7 +20,9 @@ function AboutSection() {
             reflects a simple yet relatable North Indian rural life filled with humor,
             challenges, and heartwarming moments.
           </p>
-          <a href="#">Read more</a>
+
+          {/* Glowing Main CTA */}
+          <button className="btn glow">Explore Phulera</button>
         </div>
 
         <div className="village-glance">
@@ -32,28 +34,25 @@ function AboutSection() {
             <li><strong>Literacy:</strong> 40%</li>
           </ul>
         </div>
-
       </div>
 
-      {/* RIGHT SIDE */}
+      {/* RIGHT COLUMN: Panchayat Members */}
       <div className="about-right">
         <h3>PANCHAYAT MEMBERS</h3>
-
         <div className="member-card">
           <img src={pradhanImg} alt="Pradhan" />
           <p><strong>PRADHAN</strong></p>
         </div>
-
         <div className="member-card">
           <img src={upaPradhanImg} alt="Upa Pradhan" />
           <p><strong>UPA PRADHAN</strong></p>
         </div>
-
         <div className="member-card">
           <img src={sachivImg} alt="Sachiv" />
           <p><strong>SACHIV</strong></p>
         </div>
       </div>
+
     </div>
   );
 }
