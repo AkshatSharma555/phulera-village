@@ -1,0 +1,62 @@
+.navbar {
+  background-color: white;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Top part of navbar */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Left side: image + title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-left img {
+  height: 60px;
+}
+
+.navbar-title h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-title h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Right side logo */
+.navbar-right img {
+  height: 50px;
+}
+
+/* Bottom links row */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 18px;
+  margin-right: 5px;
+}

@@ -1,0 +1,92 @@
+/* OUTER SECTION - full width with light bg */
+.agro-section {
+  width: 100%;
+  background-color: #f1f5fa; /* same as Govt Schemes */
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+/* CENTERED CONTAINER */
+.agro-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+.agro-container h2 {
+  font-size: 28px;
+  background-color: #003366; /* match Govt Schemes */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* GRID LAYOUT */
+.agro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* PRODUCT TITLE */
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #003366;
+}
+
+/* DETAILS TEXT */
+.product-card p {
+  margin: 5px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* BUY BUTTON */
+.product-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.product-card button:hover {
+  background-color: #001f4d;
+  transform: scale(1.03);
+}
